@@ -1,0 +1,36 @@
+/* Additional CSS to style buttons like links */
+.navbar-brand,
+.nav-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure buttons behave like the original links */
+.navbar-brand:hover,
+.nav-link:hover {
+  color: inherit;
+}
+
+.navbar-brand:focus,
+.nav-link:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* If you had specific button styling, you can override it here */
+.nav-link {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Maintain your existing active state styling */
+/* .nav-link.active { */
+  /* Your existing active styles will still work */
+/* } */
